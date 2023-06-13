@@ -1,0 +1,2 @@
+# JavaWeb-MVC-Market
+基于MVC模式的Java-MySQL的超市管理系统并利用DSteam实现Web中用户行为数据的实时统计
