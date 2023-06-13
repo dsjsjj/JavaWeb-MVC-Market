@@ -1,0 +1,33 @@
+body {
+    background-image: url(../image/loginbg.jpg);
+    background-size: cover;
+}
+
+#loginDiv {
+    width: 300px;
+    border: 10px solid rgb(255, 0, 0);
+    margin: 250px auto 100px auto;
+    background-color: rgba(229, 221, 219, 0.985);
+    border-radius: 10px;
+    opacity: 0.7;    /*透明度设置    */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#loginForm {
+    text-align: center;
+}
+
+
+#loginForm input {
+    height: 30px;
+    width: 200px;
+}
+
+
+#btLogin {
+    background-color: blue;     /*背景设为蓝色*/
+    color: white;       /*字体设为白色*/
+    font-weight: bold;  /*加粗*/
+    
+}

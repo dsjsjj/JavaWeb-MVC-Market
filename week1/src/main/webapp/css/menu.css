@@ -1,0 +1,58 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.left {
+    flex: 0.8; 
+    margin: 150px auto auto auto;
+    background-color: rgba(158, 202, 215, 0.985);
+    border-radius: 10px;    /*将元素的边框半径设置为10像素，使其具有圆角。*/
+    opacity: 1;     /*透明度*/
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+}
+
+
+.left p {    /*设置主菜单中所有p标签长宽*/
+    height: 30px;
+    width: 100px;
+}
+
+.left button {   /*设置按钮样式*/
+    border-radius: 10px;
+    color: blue;
+    font-size: 20px;
+}
+
+#operator {     /*当前收银员字体颜色*/
+    color: rgb(239, 13, 13);
+}
+
+
+.left button:hover,      /*鼠标移动上去和点击之后背景变色*/
+.left button:not(#logout):focus,
+.left button:not(#logout):active {
+background-color: rgb(174, 109, 177);
+}
+
+.right {    
+    flex: 2;
+    display: flex;
+    margin: 100px auto auto 400px;
+    
+}
+  
+.right img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.2);
+}
+

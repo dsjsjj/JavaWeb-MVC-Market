@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sign.css" />
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script SRC="js/logClass.js"></script>
+    <title>用户注册</title>
+</head>
+<body>
+    <div style="text-align:center; font-weight:bold;">
+        <h1>用户注册</h1>
+    </div>
+    
+    <div class="container">
+        <div class="left">
+            <p><button id="cashier" >收银</button></p>
+            <p><button id="query">查询统计</button></p>
+            <p><button id="maintenance">商品维护</button></p>
+            <p><button id="changePassword">修改密码</button></p>
+            <p><button id="export">数据导出</button></p>
+            <p><button id="register">用户注册</button></p>
+            <p><button id="logout">退出</button></p>
+            <span>当前收银员：</span>
+            <span id="operator"></span>
+        </div>
+
+        <div class="right">
+            <form id="signForm">
+                <p><input type="input" id="newUserName" name="newUserName" placeholder="输入用户名" /></p>
+                <p><input type="password" id="newPassword" name="newPassword" placeholder="设置密码" /></p>
+                <p><input type="password" id="newPassword_twice" name="newPassword_twice" placeholder="确认密码" /></p>
+                <p><input type="imput" id="name" name="name" placeholder="输入姓名" /></p>
+                <p><input type="imput" id="role" name="role" placeholder="输入角色（收银员/管理员）" /></p>
+                <p><input id="sign" type="button" value="注册" /></p>
+                <p><span id="infoSign"></span></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

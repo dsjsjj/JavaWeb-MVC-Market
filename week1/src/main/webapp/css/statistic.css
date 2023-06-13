@@ -1,0 +1,94 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.left {
+    width: 300px;
+    height: 400px;
+    padding: 70px;
+    left: 0;
+    margin-top: 60px;
+    border-radius: 10px;    /*将元素的边框半径设置为10像素，使其具有圆角。*/
+    background-color: rgba(158, 202, 215, 0.985);
+}
+
+
+.left p {    /*设置主菜单中所有p标签长宽*/
+    height: 30px;
+    width: 100px;
+}
+
+.left button {   /*设置按钮样式*/
+    border-radius: 10px;
+    color: blue;
+    font-size: 20px;
+}
+
+#operator {     /*当前收银员字体颜色*/
+    color: rgb(239, 13, 13);
+}
+
+#statisticsForm {
+    text-align: center;
+}
+
+#query{
+    background-color: rgb(174, 109, 177);
+}
+
+.left button:hover,      /*鼠标移动上去和点击之后背景变色*/
+.left button:not(#logout):focus,
+.left button:not(#logout):active {
+background-color: rgb(174, 109, 177);
+}
+
+.right{
+    padding: 10px;
+    width: 300px;
+    height: 120px;
+    border: 5px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    left: 900px;
+    background-color: yellow;
+}
+
+#statisticsForm input {
+    height: 30px;
+    width: 200px;
+}
+#list{
+    width: 1100px;
+    height: 900px;
+    float: right;
+    margin-top: -250px;
+    margin-right: 200px;
+    background-color: rgba(120, 221, 128, 0.817);
+}
+
+
+
+#list table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#list td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+  
+#list tr:hover {
+    background-color: #e0e0e0;
+}
+
+#list tr:nth-child(odd) {
+    background-color: #5d4fdad0;
+}

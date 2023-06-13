@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/export.css" />
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script SRC="js/logClass.js"></script>
+    <title>数据导出</title>
+</head>
+<body>
+    <body>
+        <div style="text-align:center; font-weight:bold;">
+            <h1>数据导出</h1>
+        </div>
+        
+        <div class="container">
+            <div class="left">
+                <p><button id="cashier" >收银</button></p>
+                <p><button id="query">查询统计</button></p>
+                <p><button id="maintenance">商品维护</button></p>
+                <p><button id="changePassword">修改密码</button></p>
+                <p><button id="export">数据导出</button></p>
+                <p><button id="register">用户注册</button></p>
+                <p><button id="logout">退出</button></p>
+                <span>当前收银员：</span>
+                <span id="operator"></span>
+            </div>
+    
+            <div class="right">
+                <form id="loadForm">
+                    <h2>将流水信息导出</h2>
+                    <p><input id="downloadFromTxtBtn" name="downloadFromTxtBtn" type="button" value="导出为txt文件" /></p>
+                    <p><input id="downloadFromXlsBtn" name="downloadFromXlsBtn" type="button" value="导出为xls文件" /></p>
+                    <p><input id="downloadFromXmlBtn" name="downloadFromXmlBtn" type="button" value="导出为xml文件" /></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</body>
+</html>

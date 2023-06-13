@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/statistic.css" />
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script SRC="js/logClass.js"></script>
+    <title>纺大超市统计查询</title>
+</head>
+<body>
+    <div style="text-align:center; font-weight:bold;">
+        <h1>统计查询</h1>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <p><button id="cashier">收银</button></p>
+            <p><button id="query">查询统计</button></p>
+            <p><button id="maintenance">商品维护</button></p>
+            <p><button id="changePassword">修改密码</button></p>
+            <p><button id="export">数据导出</button></p>
+            <p><button id="register">用户注册</button></p>
+            <p><button id="logout">退出</button></p>
+            <span>当前收银员：</span>
+            <span id="operator"></span>
+        </div>
+
+        
+            <div class="right">
+                <form id="statisticsForm">
+                    <p><input type="text" id="date" name="date" placeholder="输入销售日期(e.g.:2023-05-04"/></p>
+                    <p><input id="statistics" type="button" value="查询" /></p>
+                    <p><span id="infoStatistics"></span></p>
+                </form>
+            </div>
+
+            <div id="list">
+                <table id="table_list">
+                    <tr>
+                        <td>流水号</td>
+                        <td>条形码</td>
+                        <td>商品名称</td>
+                        <td>单价</td>
+                        <td>数量</td>
+                        <td>操作员</td>
+                        <td>销售时间</td>
+                      </tr>
+                </table> 
+            </div>
+        
+    </div>
+</body>
+</html>
